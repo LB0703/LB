@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P2 Booki</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1280px)"
+      href="petite_resolution.css"
+    />
+    <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
+    <link href="https://kit.fontawesome.com/a0bf48136d.js" />
+    <script
+      src="https://kit.fontawesome.com/a0bf48136d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img id="logo" src="images/logo/Booki.png" alt="logo Booki" />
+        <div class="description">
+          <a href="#">Hébergements</a>
+          <a href="#">Activités</a>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="section1">
+        <div class="text">
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre ville ou en pleine nature</p>
+        </div>
+
+        <div class="flex-container">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="search" placeholder="Marseille , France" />
+          <button>rechercher</button>
+        </div>
+
+        <div class="les_plus_populaires"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="Activités_à_Marseille"></div>
+    </section>
+
+    <section>
+      <div class="Activités_à_Marseille"></div>
+    </section>
+
+    <footer></footer>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
+</html>
