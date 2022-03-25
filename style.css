@@ -11,9 +11,13 @@ a{
     color: black;
     text-decoration: none;
 }
+#logo{
+    margin-right: auto;
+    padding: 0 2rem;
+}
 
 nav{
-    border: 1px solid blue;
+    
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -21,20 +25,35 @@ nav{
 }
 nav a {
     padding: 2rem;
-    
-}
-nav a:hover{
-color: #0065fc
-}
+    flex-basis: 50%;
+    text-align: center;
+   
+    }
 
 nav a:hover {
-    border-top: 3px solid #0065fc;
-}
-#logo{
 
-    margin-right: auto;
-    padding: 0 2rem;
+   border-top: 3px solid #0065fc;
+    color: #0065fc;
+
 }
+.description{
+    
+    display: flex;
+}
+@media (max-width: 768px)
+{.description{flex-basis: auto;}
+    .description{
+flex-basis: 100%;
+text-align: center;
+justify-content: space-around;}
+
+nav a:hover{
+border-bottom: 3px solid #0065fc;
+border-top: none;}
+
+}
+
+
 .section1 {
     width: 100% ;
     height: 600px;
@@ -48,13 +67,43 @@ background-color: darkorange;
 }
 .text h1 {
     font-weight: bold;
+    padding: 0 2rem;
 }
 .text p {
     font-size: small;
+    padding: 0 2rem;
 }
 
 .flex-container {
+padding: 0 2rem;
     align-items: center;
+    border
+    
+}
+.filtres{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 0 2rem;
+    font-family: "Raleway";
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-radius: 100px;
+
+
+}
+.info{
+    padding: 0 2rem;
+    font-family: "Raleway";
+    font-size: small;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+
 }
 .les_plus_populaires {
     width: 30%;
@@ -66,7 +115,7 @@ top: -22px;
 
 }
 
-.ActivitÃ©s_Ã _Marseille {
+.Activités_à_Marseille {
     width: 100%;
     height: 400px;
     background-color: coral;
@@ -79,8 +128,8 @@ footer {
 
 
 
-@media (max-width: 768px) {
-   nav a:hover{
-    border-bottom: 1px solid #0065fc;}
+
+  
+   
 
    
