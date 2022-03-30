@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="FR">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,78 +13,133 @@
       crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css" />
+    
   </head>
 
 
 
   <body>
 
-
+<!-- nav-bar -->
 
     <header>
+      
      <div>
       <nav>
         <img id="logo" src="images/logo/Booki.png" alt="logo Booki" />
         <div class="description">
           <a href="#">Hébergements</a>
           <a href="#">Activités</a>
-          
+          </div>
         </nav>
+        
         </div>
     </header>
 
 
-    
+
+
+
+<!--search-bar--> 
+    <main>
     <section>
-      <div class="section1">
-        <div class="text">
+      <div class="search-bar">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-          <p>En plein centre ville ou en pleine nature</p>
-        </div>
+          <p>En plein centre ville ou en pleine nature</p></div>
 
+
+          <div class="search-bar1">
+
+            <div class="location">
+          <i class="fa-solid fa-location-dot"></i></div>
+          
+          <form method="post" action="php">
+            <input class="Marseille" type="search" placeholder="Marseille , France" >
+          </form>
+
+<button class="search">Rechercher
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+</div>
+
+        
+</section>
+
+
+
+
+
+
+<!--filtres-search-->
+<form class="filtres">
         <div class="flex-container">
-          <i class="fa-solid fa-location-dot"></i>
-          <input type="search" placeholder="Marseille , France" />
-          <button>rechercher</button>
-        </div>
 
 
-        <div class="filtres">
-          <p>Filtres</p>
+          
+          <h2>Filtres</h2>
+          
 
+<div class="economique">
 <i class="fa-solid fa-money-bill-wave"></i>
-<input type="search" placeholder="Economique"/>
+<span>Economique</span>
+</div>
 
+
+<div class="familial">
 <i class="fa-solid fa-child-reaching"></i>
-<input type="search" placeholder="Familial">
+<span>Familial</span>
+</div>
 
+
+<div class="romantique">
 <i class="fa-solid fa-heart"></i>
-<input type="search" placeholder="Romantique">
+<span>Romantique</span>
+</div>
 
+
+<div class="animaux">
 <i class="fa-solid fa-dog"></i>
-<input type="search" placeholder="Animaux_autorisés">
+<span>Animaux acceptés</span></div>
 
 
         </div>
+
+      </form>
+
+<!--info-->
         <div class="info">
-          <i class="fa-solid fa-circle-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+          <i class="fa-solid fa-info"></i>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <div class="les_plus_populaires"></div>
-      </div>
-    </section>
+      
 
-    <section>
+    
       <div class="Activités_à_Marseille"></div>
-    </section>
+   
 
-    <section>
+    
       <div class="Activités_à_Marseille"></div>
-    </section>
+    </main>
 
     <footer></footer>
   
-    </script>
+    
   </body>
 </html>
 

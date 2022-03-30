@@ -1,135 +1,358 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 /*Wildcard */
-*{
-    box-sizing: border-box;
-    font-family: "Raleway", "sans-serif";
-   
-}
-a{
-    color: black;
-    text-decoration: none;
-}
-#logo{
-    margin-right: auto;
-    padding: 0 2rem;
+
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", "sans-serif";
 }
 
-nav{
-    
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+/*nav-bar */
+
+a {
+  color: black;
+  text-decoration: none;
 }
+
+#logo {
+  margin-right: auto;
+  padding: 0 44px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  font-size: medium;
+}
+
 nav a {
-    padding: 2rem;
-    flex-basis: 50%;
-    text-align: center;
-   
-    }
+  padding: 32px;
+  flex-basis: 50%;
+  text-align: center;
+}
 
 nav a:hover {
-
-   border-top: 3px solid #0065fc;
-    color: #0065fc;
-
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
 }
-.description{
-    
+.description {
+  display: flex;
+}
+
+p {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  #logo {
     display: flex;
+    text-align: center;
+    margin: auto;
+  }
+  .description {
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  header {
+    justify-content: center;
+  }
+  nav {
+    border-bottom: 1px solid #f2f2f2;
+  }
+  nav a:hover {
+    border-bottom: 2px solid #0065fc;
+    border-top: none;
+  }
 }
-@media (max-width: 768px)
-{.description{flex-basis: auto;}
-    .description{
-flex-basis: 100%;
-text-align: center;
-justify-content: space-around;}
 
-nav a:hover{
-border-bottom: 3px solid #0065fc;
-border-top: none;}
+/*search-bar */
 
+.search-bar {
+  margin: 15px;
 }
 
-
-.section1 {
-    width: 100% ;
-    height: 600px;
-    background-color: aqua;
-font-family: "Raleway";
-}
 .text {
-width: 100%;
-height: 100px;
-background-color: darkorange;
+  width: 50px;
+  height: 50px;
 }
-.text h1 {
-    font-weight: bold;
-    padding: 0 2rem;
+h1 {
+  font-weight: bold;
+  padding: 0 32px;
 }
-.text p {
-    font-size: small;
-    padding: 0 2rem;
+p {
+  font-size: medium;
+  padding: 0 32px;
 }
+
+.search-bar1 {
+  display: inline-flex;
+  margin: 13px;
+  align-content: center;
+  justify-content: center;
+  padding: 0 32px;
+}
+
+.location {
+  background-color: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120%;
+  padding: 0 32px;
+}
+
+.Marseille {
+  display: flex;
+  height: 50px;
+  width: 230px;
+  border: 1px solid#f2f2f2;
+  font-weight: 700;
+  text-align: center;
+  font-size: 120%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+
+.search {
+  background-color: #0065fc;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  height: 50px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 120%;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+.search:hover {
+  transform: scale(1.1);
+}
+
+.fa-magnifying-glass {
+  font-size: 20px;
+  color: transparent;
+  position: absolute;
+  padding-left: 38%;
+  margin: auto;
+  display: none;
+}
+
+@media (max-width: 667px) {
+  .fa-magnifying-glass {
+    display: inline;
+    color: white;
+    padding: 2px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+  }
+  .search {
+    color: transparent;
+    width: 13%;
+    margin-right: auto;
+  }
+  .search-bar1 {
+    display: flex;
+  }
+}
+
+/*filtres-search */
 
 .flex-container {
-padding: 0 2rem;
-    align-items: center;
-    border
-    
-}
-.filtres{
-    margin-top: 50px;
-    margin-bottom: 40px;
-    padding: 0 2rem;
-    font-family: "Raleway";
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    border-radius: 100px;
-
-
-}
-.info{
-    padding: 0 2rem;
-    font-family: "Raleway";
-    font-size: small;
-    font-weight: lighter;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-
-
-}
-.les_plus_populaires {
-    width: 30%;
-    height: 500px;
-background-color: blueviolet;
-position: relative;
-left: 1300px;
-top: -22px;
-
-}
-
-.Activités_à_Marseille {
-    width: 100%;
-    height: 400px;
-    background-color: coral;
-}
-footer {
-    width: 100%;
-    height: 200px;
-    background-color: deeppink;
-}
-
-
-
-
+  display: flex;
+  align-items: center;
+  gap: 37px;
+  flex-wrap: wrap;
   
-   
+}
+h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0 44px;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Raleway";
+ flex-wrap: wrap;
 
-   
+}
+
+.fa-solid.fa-money-bill-wave {
+  color: #0065fc;
+  background-color: #deebff;
+  padding: 16px;
+  border-radius: 50%;
+  margin: -4px;
+}
+
+
+.economique {
+  cursor: pointer;
+  border: 3px solid #deebff;
+  border-radius: 32px;
+}
+.economique span {
+  font-weight: bold;
+  padding: 16px;
+}
+
+.economique:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.02);
+}
+
+.fa-solid.fa-child-reaching {
+  color: #0065fc;
+  background-color: #deebff;
+  padding: 16px;
+  border-radius: 50%;
+  margin: -4px;
+}
+
+.familial {
+  cursor: pointer;
+  border: 3px solid #deebff;
+  border-radius: 32px;
+}
+.familial span {
+  font-weight: bold;
+  padding: 32px;
+}
+
+.familial:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.02);
+}
+
+.fa-solid.fa-heart {
+  color: #0065fc;
+  background-color: #deebff;
+  padding: 16px;
+  border-radius: 50%;
+  margin: -4px;
+}
+
+.romantique {
+  cursor: pointer;
+  border: 3px solid #deebff;
+  border-radius: 32px;
+}
+
+.romantique span {
+  font-weight: bold;
+  padding: 32px;
+}
+.romantique:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.02);
+}
+
+.fa-solid.fa-dog {
+  color: #0065fc;
+  background-color: #deebff;
+  padding: 16px;
+  border-radius: 50%;
+  margin: -3px;
+}
+.animaux {
+  cursor: pointer;
+  border: 3px solid #deebff;
+  border-radius: 32px;
+}
+.animaux span {
+  font-weight: bold;
+  padding: 32px;
+}
+
+.animaux:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.02);
+}
+.economique.familial.romantique.animaux {
+  flex-wrap: wrap;
+}
+
+/* info */
+
+.info {
+  display: flex;
+  font-weight: lighter;
+  padding: 0 36px;
+  
+}
+
+.fa-solid.fa-info {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 3px solid #deebff;
+  color: #0065fc;
+  font-size: 130%;
+  font-weight: bold;
+ 
+}
+
+
+
+
+
+.info p {
+  margin: 0 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  text-align: start;
+}
+@media (max-width: 667px) {
+  .fa-solid.fa-info {
+    font-size: medium;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    margin: 18px -18px;
+  }
+
+  .info.fa-solid.fa-info{
+    display: inline-flex;
+ justify-content: center;
+  }
+
+  .info p {
+    font-size: small;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    text-align: start;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .info {
+    padding: 0 32px;
+  }
+}
