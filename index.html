@@ -7,15 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>P2 Booki</title>
 
-    <link href="https://kit.fontawesome.com/a0bf48136d.js" />
-    <script
-      src="https://kit.fontawesome.com/a0bf48136d.js"
-      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a0bf48136d.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css" />
-    
-  </head>
 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
 
 
   <body>
@@ -23,25 +21,24 @@
 <!-- nav-bar -->
 
     <header>
-      
-     <div>
-      <nav>
-        <img id="logo" src="images/logo/Booki.png" alt="logo Booki" />
-        <div class="description">
-          <a href="#">Hébergements</a>
-          <a href="#">Activités</a>
-          </div>
+    
+      <div>
+        <img  id="logo" src="./images/logo/Booki@3x.png" alt="logo Booki" >
+        
+        <nav class="description liens flex-container">
+        <a href="#">Hébergements</a></li>
+        <a href="#">Activités</a>
+       
+  
         </nav>
         
-        </div>
+      </div>
     </header>
 
 
 
-
-
 <!--search-bar--> 
-    <main>
+    
     <section>
       <div class="search-bar">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -52,20 +49,19 @@
 
             <div class="location">
           <i class="fa-solid fa-location-dot"></i></div>
-          
-          <form method="post" action="php">
-            <input class="Marseille" type="search" placeholder="Marseille , France" >
+         
+          <form  name="Marseille" action="#">
+            <input class="Marseille" type="search" placeholder="Marseille" value="Marseille, France">
           </form>
 
 <button class="search">Rechercher
 <i class="fa-solid fa-magnifying-glass"></i>
 </button>
-</div>
 
+
+</div>
         
 </section>
-
-
 
 
 
@@ -106,6 +102,9 @@
 
       </form>
 
+
+
+
 <!--info-->
         <div class="info">
           <i class="fa-solid fa-info"></i>
@@ -114,6 +113,102 @@
 
 
 
+<!--accomodation in Marseille-->
+
+<main>
+
+
+
+<section class=flex-container>
+  
+<div class="accomodation_in_Marseille_flex">
+  <h3>Hébergements à Marseille</h3>
+
+
+
+  <div class="box1">
+    <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="picture_La_Cannebière">
+  <h4>Auberge la Cannebière</h4>
+  <p>Nuit à partir de 25€</p>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+</div>
+
+  <div class="box2">
+    <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="picture_Hotel_du_port">
+  <h5>Hôtel du port</h5>
+  <p>Nuit à partir de 52€</p>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+
+</div>
+
+
+<div class="box3">
+  <img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="picture Hotel_des_mouettes">
+<h6>Hôtel des mouettes</h6>
+<p>Nuit à partir de 76€</p>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+
+<div class="box4">
+  <img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="picture_Hotel_de_la_mer">
+<h7>Hôtel de la mer</h7>
+<p>Nuit à partir de 46€</p>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+
+</div>
+
+
+<div class="box5">
+  <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="picture_Auberge_le_Panier">
+<h8>Auberge le Panier</h8>
+<p>Nuit à partir de 23€</p>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+
+</div>
+
+
+
+<div class="box6">
+  <img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="picture_Hotel_chez_Amina">
+<h9>Hôtel chez Amina</h9>
+<p>Nuit à partir de 96€</p>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+
+<div class="show more">
+<p>Afficher plus</p>
+
+</div>
+
+</div>
+
+
+</div>
+</section>
 
 
 
@@ -122,20 +217,71 @@
 
 
 
+<!--most popular-->
+<aside>
+  <div class="Les_plus_populaires_flex">
+<h10>Les plus populaires</h10>
+
+<div class="box7">
+  <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="picture_Hotel_le_soleil_du matin">
+<h11>Hôtel le soleil du matin</h11>
+<p>Nuit à partir de 128€</p>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+
+
+<div class="box8">
+  <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="picture_AU_coeur_de_l'eau">
+<h12>Au coeur de l'eau Chambres d'hôtes</h12>
+<p>Nuit à partir de 71€</p>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+
+<div class="box9">
+  <img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="picture_hotel_tout_et_blanc">
+<h13>Hôtel Tout bleu et Blanc</h13>
+<p>Nuit à partir de 68€</p>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
 
 
 
-        
-        <div class="les_plus_populaires"></div>
-      
 
-    
+
+
+
+  </div>
+</aside>
+
+
+
+
+
+
+
+<!--activities in Marseille-->
+    <section>
       <div class="Activités_à_Marseille"></div>
-   
+      <h5>Activités à Marseille</5>
 
-    
-      <div class="Activités_à_Marseille"></div>
+    </section>
+
     </main>
+
+
+
 
     <footer></footer>
   

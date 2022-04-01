@@ -9,18 +9,29 @@
 
 /*nav-bar */
 
+
+
 a {
   color: black;
   text-decoration: none;
+  display: block;
 }
 
 #logo {
+ display:  flex;
   margin-right: auto;
   padding: 0 44px;
+  height: 30%;
+  width: 15%;
+ 
+  
 }
-
+li{
+  display: inline-flexbox;
+  width: 60%;
+}
 nav {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -29,17 +40,17 @@ nav {
 
 nav a {
   padding: 32px;
-  flex-basis: 50%;
+  flex-basis: 15%;
   text-align: center;
+  justify-content: center;
+  display: inline-block;
 }
 
 nav a:hover {
   border-top: 3px solid #0065fc;
   color: #0065fc;
 }
-.description {
-  display: flex;
-}
+
 
 p {
   margin-left: auto;
@@ -50,21 +61,23 @@ p {
     display: flex;
     text-align: center;
     margin: auto;
+    height: 250%;
+    width: 40%;
   }
-  .description {
-    flex-basis: 100%;
-    text-align: center;
-    justify-content: center;
-  }
-  header {
-    justify-content: center;
-  }
+ 
+ 
   nav {
+    
     border-bottom: 1px solid #f2f2f2;
+
   }
   nav a:hover {
     border-bottom: 2px solid #0065fc;
     border-top: none;
+    text-align: center;
+    justify-content: center;
+    flex-basis: 15%;
+    
   }
 }
 
