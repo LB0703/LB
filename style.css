@@ -7,25 +7,25 @@
   font-family: "Raleway", "sans-serif";
 }
 
-body {
-  display: block;
-  margin: 8px;
-}
 /*nav-bar */
 
-header a {
+#logo {
+  padding: 0 16px;
+  margin-right: auto;
+  max-width: 180px;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: black;
   text-decoration: none;
   display: block;
-  font-weight: 600;
-  font-size: larger;
-}
-
-#logo {
-  margin-right: auto;
-
-  height: 20%;
-  width: 10%;
+  font-weight: 700;
+  font-size: large;
+  margin-left: 100px;
+  flex-wrap: wrap;
 }
 
 nav {
@@ -35,31 +35,10 @@ nav {
   flex-wrap: wrap;
 }
 
-.sub-nav {
-  display: flex;
-  flex-basis: 135%;
-
-  flex-basis: 10%;
-  text-align: center;
-  justify-content: center;
-}
-
-header a {
-  display: flex;
-  margin: 30px 30px;
-  flex-wrap: wrap;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-}
-
 header a:hover {
   border-top: 3px solid #0065fc;
   color: #0065fc;
-}
-
-p {
-  margin-left: auto;
+  padding: 32px;
 }
 
 @media (max-width: 768px) {
@@ -67,14 +46,14 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    height: 30%;
-    width: 20%;
+    margin-right: auto;
+    padding: 0 16px;
   }
 
   nav a {
+    justify-content: space-between;
+    text-align: start;
     flex-wrap: wrap;
-    display: block;
   }
 
   nav {
@@ -86,6 +65,7 @@ p {
     text-align: center;
     justify-content: center;
     flex-basis: 15%;
+    flex-wrap: wrap;
   }
 }
 
@@ -327,15 +307,17 @@ h2 {
   color: #0065fc;
   font-size: 130%;
   font-weight: bold;
+  margin: 50px 2px;
 }
 
 .info p {
-  margin: 0 2px;
+  margin: 50px 2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: medium;
-  text-align: start;
+  font-size: 100%;
+  font-weight: 300;
+  color: black;
 }
 @media (max-width: 667px) {
   .fa-solid.fa-info {
@@ -363,4 +345,158 @@ h2 {
   .info {
     padding: 0 32px;
   }
+}
+/*accomodation in Marseille*/
+
+h3 {
+  margin: 40px 0 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 0 16px;
+  font-weight: 700;
+  font-size: 130%;
+}
+
+.bloc1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.bloc2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.container {
+  display: flex;
+
+  flex-wrap: wrap;
+  height: 850px;
+  width: 1000px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  margin: 0 32px;
+}
+
+.card-picture1 {
+  width: 220px;
+  height: auto;
+  background-color: white;
+  margin-bottom: 40px;
+  border-radius: 20px 20px;
+  margin: 50px;
+}
+
+.card-picture1 img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15% 15% 0 0;
+  height: 120px;
+  width: 100%;
+}
+
+.card-picture2 {
+  width: 220px;
+  height: auto;
+  background-color: white;
+  margin-bottom: 40px;
+  border-radius: 20px 20px;
+  margin: 50px;
+}
+
+.card-picture2 img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15% 15% 0 0;
+  height: 120px;
+  width: 100%;
+}
+
+.card-picture3 {
+  width: 220px;
+  height: auto;
+  background-color: white;
+  margin-bottom: 40px;
+  border-radius: 20px 20px;
+  margin: 50px;
+}
+
+.card-picture3 img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15% 15% 0 0;
+  height: 120px;
+  width: 100%;
+}
+
+.card-picture4 {
+  width: 220px;
+  height: auto;
+  background-color: white;
+  margin-bottom: 40px;
+  border-radius: 20px 20px;
+  margin: 50px;
+}
+
+.card-picture4 img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15% 15% 0 0;
+  height: 120px;
+  width: 100%;
+}
+.card-picture5 {
+  width: 220px;
+  height: auto;
+  background-color: white;
+  margin-bottom: 40px;
+  border-radius: 20px 20px;
+  margin: 50px;
+}
+
+.card-picture5 img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15% 15% 0 0;
+  height: 120px;
+  width: 100%;
+}
+.card-picture6 {
+  width: 220px;
+  height: auto;
+  background-color: white;
+  margin-bottom: 40px;
+  border-radius: 20px 20px;
+  margin: 50px;
+}
+.card-picture6 img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15% 15% 0 0;
+  height: 120px;
+  width: 100%;
+}
+
+.show_more {
+  display: flex;
+  font-weight: 700;
+  font-size: 130%;
+  padding: 0 16px;
+  font-family: "Raleway", "sans-serif";
+}
+
+/*most popular*/
+
+.Les_plus_populaires {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 33%;
+  height: 650px;
+  width: 500px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  margin: 32px 32px;
 }
