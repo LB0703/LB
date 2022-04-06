@@ -32,6 +32,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-right: 160px;
   flex-wrap: wrap;
 }
 
@@ -311,6 +312,7 @@ h2 {
 }
 
 .info p {
+  flex-wrap: wrap;
   margin: 50px 2px;
   display: flex;
   align-items: center;
@@ -344,7 +346,9 @@ h2 {
   }
   .info {
     padding: 0 32px;
-  }
+   flex-wrap: wrap;
+       }
+  
 }
 /*accomodation in Marseille*/
 
@@ -361,36 +365,60 @@ h3 {
 
 .bloc1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+ 
 }
 
 .bloc2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+ 
 }
+
+.accomodation_in_Marseille{
+  display: inline-flex;
+ 
+}
+.Les_plus_populaires{
+  display: inline-flex;
+
+width: 33%;
+}
+
 .container {
   display: flex;
-
-  flex-wrap: wrap;
+flex-wrap: wrap;
   height: 850px;
-  width: 1000px;
+  width: 66%;
   border-radius: 20px;
   background-color: #f2f2f2;
   margin: 0 32px;
 }
+
+
+
+
+
+
+
 
 .card-picture1 {
   width: 220px;
   height: auto;
   background-color: white;
   margin-bottom: 40px;
-  border-radius: 20px 20px;
+  border-radius: 20px 20px 20px 20px;
   margin: 50px;
+  padding-bottom: 10px;
+
 }
 
 .card-picture1 img {
+  object-fit: cover;
   background-size: cover;
   background-position: center;
   border-radius: 15% 15% 0 0;
@@ -398,16 +426,24 @@ h3 {
   width: 100%;
 }
 
+.card-star1{
+  align-items: center;
+  justify-content: center;
+ padding: 0 32px;
+}
+
 .card-picture2 {
   width: 220px;
   height: auto;
   background-color: white;
   margin-bottom: 40px;
-  border-radius: 20px 20px;
+  border-radius: 20px 20px 20px 20px;
   margin: 50px;
+  padding-bottom: 10px;
 }
 
 .card-picture2 img {
+  object-fit: cover;
   background-size: cover;
   background-position: center;
   border-radius: 15% 15% 0 0;
@@ -420,11 +456,13 @@ h3 {
   height: auto;
   background-color: white;
   margin-bottom: 40px;
-  border-radius: 20px 20px;
+  border-radius: 20px 20px 20px 20px;
   margin: 50px;
+  padding-bottom: 10px;
 }
 
 .card-picture3 img {
+  object-fit: cover;
   background-size: cover;
   background-position: center;
   border-radius: 15% 15% 0 0;
@@ -437,11 +475,13 @@ h3 {
   height: auto;
   background-color: white;
   margin-bottom: 40px;
-  border-radius: 20px 20px;
+  border-radius: 20px 20px 20px 20px;
   margin: 50px;
+  padding-bottom: 10px;
 }
 
 .card-picture4 img {
+  object-fit: cover;
   background-size: cover;
   background-position: center;
   border-radius: 15% 15% 0 0;
@@ -453,11 +493,13 @@ h3 {
   height: auto;
   background-color: white;
   margin-bottom: 40px;
-  border-radius: 20px 20px;
+  border-radius: 20px 20px 20px 20px;
   margin: 50px;
+  padding-bottom: 10px;
 }
 
 .card-picture5 img {
+  object-fit: cover;
   background-size: cover;
   background-position: center;
   border-radius: 15% 15% 0 0;
@@ -469,10 +511,12 @@ h3 {
   height: auto;
   background-color: white;
   margin-bottom: 40px;
-  border-radius: 20px 20px;
+  border-radius: 20px 20px 20px 20px;
   margin: 50px;
+  padding-bottom: 10px;
 }
 .card-picture6 img {
+  object-fit: cover;
   background-size: cover;
   background-position: center;
   border-radius: 15% 15% 0 0;
@@ -490,13 +534,83 @@ h3 {
 
 /*most popular*/
 
+
+h4 {
+  margin: 40px 0 40px 20px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  font-weight: 700;
+  font-size: 130%;
+  }
+
+
+
+
+.bloc3 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: px solid #0065fc;
+ margin-top: -200px;
+
+  
+}
+
+
 .Les_plus_populaires {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 33%;
-  height: 650px;
+  height: 850px;
   width: 500px;
   border-radius: 20px;
   background-color: #f2f2f2;
-  margin: 32px 32px;
+  
+ 
 }
+
+.card-picture7{
+  border: 1px solid #0065fc;
+  display: flex;
+ justify-content: center;
+}
+
+.card-picture7 img {
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  height: 140px;
+  width: 110px;
+  padding: 3%;
+ }
+
+.card-picture8{
+  border: 1px solid #0065fc;
+  display: flex;
+ justify-content: center;
+
+}
+.card-picture8 img {
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  height: 140px;
+  width: 110px;
+  padding: 3%;
+
+ }
+
+
+.card-picture9{
+  border: 1px solid #0065fc;
+  display: flex;
+ justify-content: center;
+}
+
+.card-picture9 img {
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  height: 140px;
+  width: 110px;
+  padding: 3%;
+  }
+
