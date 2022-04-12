@@ -55,10 +55,10 @@
 
           <form  class="search-form" name="search-city" action="#">
           
-          <section class="localization">
+          <div class="localization">
             <span ><i class="fa-solid fa-location-dot"></i>
          </span>
-        </section>
+        </div>
 
        
             <input class="city" type="search" placeholder="Enter your city" value="Marseille, France">
@@ -136,7 +136,7 @@
 
 
 
-  <section class="duo-box">
+  <section id="duo-box">
 
 
 <section class="housing">
@@ -274,33 +274,36 @@
 </div>
 
 
-  <div class="most-popular-list">
+  <section class="most-popular-list">
+
+
 
     <div class="most-popular-list-item-card">
-
-      <a href="#">
-        <img class="picture" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="picture_Hotel_le_soleil_du matin"></a>
-  
-      <p>Hôtel le soleil du matin</p>
+      <div class="description">
+      <a class="picture-most-popular" href="#">
+        <img class="picture" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="picture_Hotel_le_soleil_du matin">
+      
+       
+        <p class="name-most-popular">Hôtel le soleil du matin</p>
       <p>Nuit à partir de <strong>128€</strong></p>
       <p class="star-most-popular">
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i></p>
-
-    </div>
-
+      <i class="fa-solid fa-star"></i></p></a>
+     </div>
+    
+</div>
 
 
 
     <div class="most-popular-list-item-card">
-
-      <a href="#">
-        <img class="picture" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="picture_AU_coeur_de_l'eau"></a>
-      
-      <p>Au coeur de l'eau Chambres d'hôtes</p>
+      <div class="description">
+      <a class="picture-most-popular" href="#">
+        <img class="picture" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="picture_AU_coeur_de_l'eau">
+      </a>
+      <p class="name-most-popular">Au coeur de l'eau Chambres d'hôtes</p>
       <p>Nuit à partir de <strong>71€</strong></p>
       <p class="star-most-popular">
       <i class="fa-solid fa-star"></i>
@@ -308,7 +311,8 @@
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star colorgrey"></i></p>
-
+    
+  </div>
 
 
     </div>
@@ -318,11 +322,12 @@
 
 
 
-    <div class="most-popular-list-item-card" >
-      <a href="#">
-        <img class="picture" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="picture_hotel_tout_et_blanc"></a>
-      
-      <p>Hôtel Tout bleu et Blanc</p>
+    <div class="most-popular-list-item-card">
+      <div class="description">
+      <a class="picture-most-popular" href="#">
+        <img class="picture" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="picture_hotel_tout_et_blanc">
+      </a>
+      <p class="name-most-popular">Hôtel Tout bleu et Blanc</p>
       <p>Nuit à partir de <strong>68€</strong></p>
       <p class="star-most-popular">
       <i class="fa-solid fa-star"></i>
@@ -330,17 +335,23 @@
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star colorgrey"></i></p>
+    
+  </div>
 
     </div>
   
-</div>
+
+
+
 
 
 </section>
+
+</section>
+
 </aside>
+
 </section>
-
-
 
 
 
@@ -348,62 +359,86 @@
 
 
 <!--activities in Marseille-->
-    <section class="flex-container3">
-
-
-      <div class="Activités_à_Marseille">
 
 
 
-      <h5>Activités à Marseille</h5>
+    
 
-        <div class="box10">
+
+<!--title-section-->
+     
+<div class="header-activities">
+    <h2>Activités à Marseille</h2>
+    
+    </div>
+
+
+
+    <!--first-column-->
+    <section class="activities">
+        <div class="one-picture-left">
           <a href="#">
-          <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux_Port">
-          <p>Vieux Port</p>
+          <img class="vieux-port" src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux_Port">
+          <p class="tiltle-activities">Vieux Port</p>
         </a>
         </div>
 
-<div class="box11">
+
+        <!--second-column-->
+
+
+<div class="column-picture-left">
+  <div class="activities-top-left">
   <a href="#">
-  <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort_de_Pomègues">
-<p>Fort de Pomègues</p>
+  <img class="fort-pomegues" src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort_de_Pomègues">
+<p class="tiltle-activities">Fort de Pomègues</p>
 </a>
 </div>
 
 
-<div class="box12">
+<div class="activities-bottom-left">
   <a href="#">
- <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles_du_Frioul">
-<p>Iles du Frioul</p>
+ <img class="iles-du-frioul" src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles_du_Frioul">
+<p class="tiltle-activities">Iles du Frioul</p>
 </a>
 </div>
 
-<div class="box13">
+</div>
+
+<!--third-column-->
+
+<div class="second-picture-right">
   <a href="#">
-  <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc_National_des_Calanques">
-<p>Parc National des Calanques</p>
+  <img class="parc-national" src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc_National_des_Calanques">
+<p class="tiltle-activities">Parc National des Calanques</p>
 </a>
 </div>
 
-<div class="box14">
+
+<!--fourth-column-->
+
+
+
+<div class="columm-picture-right">
+  <div class="activities-top-right">
   <a href="#">
-  <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre_Dame_de_la_Garde">
-  <p>Notre Dame de la Garde</p>
+  <img class="notre-dame" src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre_Dame_de_la_Garde">
+  <p class="tiltle-activities">Notre Dame de la Garde</p>
 </a>
 </div>
 
-<div class="box15">
+
+<div class="activities-bottom-right">
   <a href="#">
-  <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc_Longchamp">
-  <p>Parc Longchamp</p>
+  <img class="longchamp" src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc_Longchamp">
+  <p class="tiltle-activities" >Parc Longchamp</p>
 </a>
 </div>
+</div>
+     
 
-      </div>
-
-      
-    </section>
+      </section>
+    
     </main>
 
 
