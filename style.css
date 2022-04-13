@@ -538,6 +538,7 @@ width: 600px;
 display: flex;
 
 
+
 }
 .the-most-popular h2{
   font-size: 140%;
@@ -656,7 +657,7 @@ margin-right: 30px;
   padding: 0 32px;
   margin-top: 50px;
   margin-bottom: 40px;
-
+  color: black;
 }
 .header-activities h2{
   font-size: 130%;
