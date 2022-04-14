@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="FR">
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,125 +8,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a0bf48136d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
-
-   
-
   </head>
-
-
   <body>
-
 <!-- nav-bar -->
-
     <header>
-  
-        <img  id="logo" src="./images/logo/Booki@3x.png" alt="logo Booki" >
-       
-        <div class="menu">
-
-        <nav > 
-         
-        <a class="hebergements" href="#">Hébergements</a>
-        
-        <a class="activites" href="#">Activités</a>
-     
+      <img  id="logo" src="./images/logo/Booki@3x.png" alt="logo Booki" >
+      <div class="menu">
+        <nav >          
+          <a  href="#">Hébergements</a>
+          <a  href="#">Activités</a>     
         </nav>
-
-      
-    </div>
+      </div>
     </header>
-
-
-
 <!--section.search--> 
-<main>
-
-
-
-
+  <main>
     <section class="search">
-
       <div class="search-bar">
-
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-          <p>En plein centre ville ou en pleine nature</p></div>
-
-
-          <form  class="search-form" name="search-city" action="#">
-          
+          <p>En plein centre ville ou en pleine nature</p>
+      </div>
+      <form  class="search-form" name="search-city" action="#">
           <div class="localization">
-            <span ><i class="fa-solid fa-location-dot"></i>
-         </span>
-        </div>
-
-       
-            <input class="city" type="search" placeholder="Enter your city" value="Marseille, France">
-          
-        
-            <div class="glass">
-            <input class="button-input" type="submit" value="Rechercher">
-          
-        
-          
-<i class="fa-solid fa-magnifying-glass"></i>
-</div>
-
-
-</form>
-
-
-        
-</section>
-
-
-
-
-<!--filters-search-->
-
-
-<section class="search-filters">
-<form class="form-filters" name="form-filters" action="#">
-
-      
-          
-          <span class="title">Filtres</span>
-          
-
-
-<div class="economique">
-<i class="fa-solid fa-money-bill-wave"></i>
-<span>Economique</span>
-</div>
-
-
-<div class="familial">
-<i class="fa-solid fa-child-reaching"></i>
-<span>Familial</span>
-</div>
-
-
-<div class="romantique">
-<i class="fa-solid fa-heart"></i>
-<span>Romantique</span>
-</div>
-
-
-<div class="animaux">
-<i class="fa-solid fa-dog"></i>
-<span>Animaux acceptés</span></div>
-
-
-        
-
-      </form>
-
+            <span ><i class="fa-solid fa-location-dot"></i></span>
+          </div>       
+          <input class="city" type="search" placeholder="Entrer votre ville" value="Marseille, France">
+          <button class="button-search" type="submit"><span>Rechercher</span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>           
+      </form> 
     </section>
-
-
+<!--filters-search-->
+    <section class="search-filters">
+      <form class="form-filters" name="form-filters" action="#">
+          <span class="title">Filtres</span>
+          <div class="filters">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            <span class="economic">Economique</span>
+          </div>
+          <div class="filters">
+            <i class="fa-solid fa-child-reaching"></i>
+            <span class="family">Familial</span>
+          </div>
+          <div class="filters">
+            <i class="fa-solid fa-heart"></i>
+            <span class="romantic">Romantique</span>
+          </div>
+          <div class="filters">
+            <i class="fa-solid fa-dog"></i>
+            <span class="animal">Animaux acceptés</span>
+          </div>       
+      </form>
+    </section>
 <!--info-->
-        <div class="info">
-          <i class="fa-solid fa-info"></i>
-          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          <div class="info">
+            <i class="fa-solid fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 
 
@@ -136,19 +71,18 @@
 
 
 
-  <section id="duo-box">
+<section id="duo-box">
 
 
 <section class="housing">
 
-  <h2 class="housing-title">Hébergements à Marseille</h2>
+<h2 class="housing-title">Hébergements à Marseille</h2>
 
-  
 <div class="housing-list">
 
 
 
-    <div class="accomodation-list-item-card">
+<div class="accomodation-list-item-card">
       <a href="#">
       <img class="picture" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Aunberge la Cannebière">
         <p class="name-accomodation">Auberge la Cannebière</p>
@@ -168,8 +102,7 @@
 
     <div class="accomodation-list-item-card">
       <a href="#">
-        <img class="picture" src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="picture_Hotel_du_port" >
-     
+        <img class="picture" src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="picture_Hotel_du_port" >     
         <p class="name-accomodation">Hôtel du port</p>
       <p>Nuit à partir de <strong>52€</strong></p>
       <p class="star">
@@ -196,7 +129,7 @@
     </div>
 
 
-   
+
 
 
     <div class="accomodation-list-item-card">
@@ -272,7 +205,6 @@
 </div>
 
 
-   
   
 
   
@@ -294,7 +226,7 @@
     <i class="fa-solid fa-star"></i>
     <i class="fa-solid fa-star"></i>
     <i class="fa-solid fa-star"></i></p>
-   </div>
+</div>
   
 </div>
 
@@ -303,7 +235,6 @@
   
 
     <div class="most-popular-list-item-card">
-     
       <a class="picture-most-popular" href="#">
         <img class="picture-popular" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="picture_AU_coeur_de_l'eau">
         <div class="description">
@@ -316,7 +247,6 @@
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star colorgrey"></i></p>
     
- 
     </div>
 
     </div>
@@ -363,7 +293,6 @@
 
 
 <!--title-section-->
-     
 <div class="header-activities">
     <h2>Activités à Marseille</h2>
     
@@ -395,7 +324,7 @@
 
 <div class="activities-bottom-left">
   <a href="#">
- <img class="iles-du-frioul" src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles_du_Frioul">
+<img class="iles-du-frioul" src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles_du_Frioul">
 <p class="tiltle-activities">Iles du Frioul</p>
 </a>
 </div>
@@ -432,7 +361,6 @@
 </a>
 </div>
 </div>
-     
 
       </section>
     
@@ -440,57 +368,30 @@
 
 
 <!--footer-->
-
-    <footer>
-
-
-<section class="footer">
-
-<div class="part-1">
-  <p>A propos</p>
-  <ul>
-    <li><a href="#">Fonctionnement du site</a></li>
-
-   <li><a href="#">Conditions générales de vente</a></li>
-
-   <li><a href="#">Données et confidentialité</a></li>
-    
-  </ul>
-
-</div>
-
-<div class="part-2">
-  <p>Nos hébergements</p>
-  <ul>
-<li><a href="#">Charte qualité</a></li>
-
-<li><a href="#">Soumettre votre hôtel</a></li>
-
-  </ul>
-</div>
-
-
-
-
-<div class="part-3">
-  <p>Assistance</p>
-
-  <ul>
-<li><a href="#">Centre d'aide</a></li>
-
-<li><a href="#">Nous contacter</a></li>
-
-  </ul>
-
-</div>
-</section>
+    <footer class="footer">
+      <div class="footer-column">
+        <p>A propos</p>
+        <ul>
+          <li><a href="#">Fonctionnement du site</a></li>
+          <li><a href="#">Conditions générales de vente</a></li>
+          <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p>Nos hébergements</p>
+        <ul>
+          <li><a href="#">Charte qualité</a></li>
+          <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p>Assistance</p>
+        <ul>
+          <li><a href="#">Centre d'aide</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
+      </div>
     </footer>
-  
-    
-
-
-
-
   </body>
 </html>
 
