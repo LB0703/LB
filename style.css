@@ -55,9 +55,9 @@ nav a:hover {
   color: #0065fc;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px){
   header{
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 40px;
@@ -65,25 +65,22 @@ nav a:hover {
 
   }
   #logo {   
-    justify-content: center;
-    align-items: center;
+    display: block;
+    margin: auto;
+   padding-left: 40px;
   }
-.menu{
-  justify-content: space-around;
-  margin-top: 30px;
+  .menu{
+    justify-content: space-around;
+    margin-top: 30px;
 }
   nav a {
     justify-content: space-around;
     border-top: transparent;
-    padding-left: 100px;
-padding-bottom: 40px;
+    padding-bottom: 40px;
   }
-
-
   nav a:hover {
     border-bottom: 3px solid #0065fc;
     border-top: transparent;
-  
   }
 }
 
@@ -320,12 +317,12 @@ text-align: center;
   display: flex;
   justify-content: space-around;
 }
-.housing h2{
+#housing h2{
   padding: 0 32px;
   font-weight: 700;
   font-size: 130%;
 }
-.housing {
+#housing {
   width: 65%;
   height: 800px;
   margin: 0;
@@ -447,12 +444,12 @@ color: #0065fc;
 
 /*activities-in-Marseille*/
 /*tiltle-section*/
-.header-activities {
+#header-activities {
   display: flex;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.header-activities h2{
+#header-activities h2{
   font-size: 130%;
   color: black;
   padding: 0 32px;
