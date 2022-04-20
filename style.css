@@ -25,7 +25,6 @@ footer{
                     /*Media-query pour les mobiles*/
 @media (max-width: 768px) {
   header{
-
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -76,6 +75,7 @@ nav a:hover {
 
 
                     /*Media-query pour les tablettes*/
+                              /*nav-bar */
 @media (min-width: 768px) and (max-width: 991px){
   header{
     display: block;
@@ -83,7 +83,7 @@ nav a:hover {
     flex-wrap: wrap;
   }
   #logo {   
-  margin-left: auto;
+    margin-left: auto;
     margin-bottom: 10px;
     max-width: 120px;
   }
@@ -102,24 +102,26 @@ nav a:hover {
 }
 
                     /*Media-query pour les mobiles*/
+                            /*nav-bar */
 @media (max-width: 768px)  {
   header{
     display: block;
     justify-content: space-between;
     padding-bottom: 20px;
-    border-bottom: 4px solid #f2f2f2;
+    border-bottom: 3px solid #f2f2f2;
+    margin-bottom: 0px;
   }
   #logo {   
     margin: auto;
-    max-width: 70px;
+    max-width: 80px;
     margin-bottom: 15px;
     }
   .menu{
-   width: 100%;
+    width: 100%;
   }
   nav a {
     width: 50%;
-  font-size: 70%;
+    font-size: 70%;
     border-top: transparent;
     padding-bottom: 20px;
   }
@@ -193,14 +195,8 @@ p {
                     /*Media-query pour les tablettes*/
                           /*section.search */
 @media (min-width: 768px) and (max-width: 991px){
-  .search {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 0px;
-  }
+  
   h1{
-    margin-top: 10px;
     font-size: medium;
   }
   .search .p{
@@ -209,12 +205,25 @@ p {
   .button-search{
     width: 60px;
 }
+  .localization {
+    height: 45px;
+    font-size: 100%;
+}
+  .city {
+    height: 45px;
+    width: 160px;
+    font-size: 80%;
+}
+  .button-search{
+    width: 45px;
+    height: 45px;
+    
+}
   .button-search i{    
     display: block;
     padding: 50%;
     color: white;
     font-size: large;
-    cursor: pointer;
   }
   .button-search span{
     display: none;
@@ -222,40 +231,49 @@ p {
 }
 
 
-
                     /*Media-query pour les mobiles*/
                           /*section.search */
 @media (max-width: 767px) {
-  .search {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px;
+  .search{
+    margin-top: 20px;
   }
   h1 {
-    font-size:75%;
-    
-    
+    font-size:70%;
   }
   p {
     font-size: 70%;
-  
+  }
+  .search-form {
+    justify-items: center;
+  }
+  .localization {
+    height: 40px;
+    font-size: 90%;
+  }
+  .city {
+    height: 40px;
+    width: 150px;
+    border: 1px solid #f2f2f2;
+    font-weight: 700;
+    text-align: center;
+    font-size: 70%;
   }
   .button-search{
-    width: 60px;
+    width: 45px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: -10px;
 }
-.button-search i{    
-  display: block;
-  padding: 50%;
-  color: white;
-  font-size: x-large;
-  cursor: pointer;
+  .button-search i{    
+    display: block;
+    padding: 50%;
+    color: white;
+    font-size: medium;
   }
   .button-search span{
-  display: none;
-    }
+    display: none;
+      }
 }
-
-
 
 
 /*filters-search */
@@ -366,13 +384,25 @@ p {
 }
 
                     /*Media-query pour les mobiles*/
- @media (max-width: 768px){
-
-
- }
-
-
-
+@media (max-width: 768px){
+  .filters{
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  .title{
+    font-size: large;
+    margin-right: 0px;
+  }
+  .form-filters {
+    margin: 12px;
+  }
+  .filters span{
+    font-size: 70%;
+    text-align: justify;
+    border: 2px solid #f2f2f2;
+    padding-top: 15px;
+  }
+}
 
 
 /* info */
@@ -421,22 +451,18 @@ text-align: center;
                     /*Media-query pour les mobiles*/
 @media (max-width: 768px) {
   .info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 5px ;
   }
   .fa-solid.fa-info {
-   
-    font-size: small;
-    margin-left: 3px;
-    border: 3px solid #deebff;
-    border-radius: 50%;
-    text-align: center;
+    font-size: 18px;
+    border: 45%;
   }
   .info p {
     font-size: x-small;
   }
     }
+
+
 
 /*duo*/
 .duo-box {
@@ -564,6 +590,39 @@ text-align: justify;
 
                       /*Media-query pour les mobiles*/
 @media (max-width: 768px){
+  .duo-box{
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+
+    }
+    #housing {
+      width: 100%;
+      height: 100%;
+      background-color: white;  
+      }
+    #housing h3{
+  font-size: 90%;
+}
+    #housing .card{
+  width: 100%;
+  height: 210px;
+  margin-bottom: 20px;
+}
+    #housing .picture{
+  height: 50%;
+  object-fit: cover;
+  background-size: cover;
+}
+    .card p{
+  font-size: 80%;
+}
+    .star{
+  font-size: 80%;
+}
+    .show-more{
+  font-size: 110%;
+  padding-left: 20px;
+}
 
 }
 
@@ -627,6 +686,7 @@ color: #0065fc;
 
 
                     /*Media-query pour les tablettes*/
+                            /*most-popular*/
 @media (min-width: 768px) and (max-width: 991px){
   .header-most-popular h2{
     font-size: 100%;
@@ -660,8 +720,29 @@ color: #0065fc;
 }
 
                     /*Media-query pour les mobiles*/
+                            /*most-popular*/
 @media (max-width: 768px){
-
+aside{
+  border-radius: 0px ;
+  width: 100%;
+  height: 50%;
+}
+.most-popular-list .card{
+  height: 140px;
+  width: 90%;
+}
+.most-popular-list .picture{
+  height: 138px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+}
+aside h3{
+  font-size: 90%;
+}
+.star-most-popular{
+  font-size: 80%;
+}
 }
 
 
@@ -782,7 +863,8 @@ transform: scale(1.03);
 }
 
 
-/*Media-query pour les tablettes*/
+                    /*Media-query pour les tablettes*/
+                        /*activities-in-Marseille*/
 @media (min-width: 768px) and (max-width: 991px){
   .column-activities{
     justify-content: space-around;
@@ -818,35 +900,89 @@ transform: scale(1.03);
     width: 50%;
     height: 30%;
   }
-.activities-bottom-right{
-  margin-bottom: 10px;
+  .activities-bottom-right{
+    margin-bottom: 10px;
 }
-.activities-bottom-right{
-  margin-top: 10px;
+  .activities-bottom-right{
+    margin-top: 10px;
 }
-.fort-pomegues{
-  height: 140px;
-
+  .fort-pomegues{
+    height: 140px;
 }
-.iles-du-frioul{
-  height: 100px;
+  .iles-du-frioul{
+    height: 100px;
 }
-.notre-dame{
-  height: 100px;
+  .notre-dame{
+    height: 100px;
 }
-.longchamp{
-  height: 140px;
+  .longchamp{
+    height: 140px;
 }
 }
 
 
                     /*Media-query pour les mobiles*/
+                        /*activities-in-Marseille*/
 @media (max-width: 768px){
   .column-activities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #header-activities h2{
+    padding-left: 20px;
+  }
+  h3{
+    font-size: 80%;
+  }
+  .one-column-activities{
+    width: 90%;
+    height: 150px;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  .activities-top-left{
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .activities-bottom-left{
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .vieux-port {
+    width: 100%;
+    height: 100px;
+  }
+  .parc-national{
+    width: 100%;
+    height: 100px;
+  }
+  .second-column-activities{
+    width: 90%;
+    justify-content: space-around;
+  }
+  .activities-top-right{
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .activities-bottom-right{
+    margin-bottom: 10px;
+    height: 150px;
+  }
+  .fort-pomegues{
+    height: 100px;
 
   }
+  .iles-du-frioul{
+    height: 100px;
+  }
+  .notre-dame{
+    height: 100px;
+  }
+  .longchamp{
+    height: 50%;
+  }
 }
-
 
 
 /*footer*/
@@ -874,9 +1010,10 @@ transform: scale(1.03);
 .footer ul{
   padding-left: 0px;
   margin: 35px;
+  margin-top: 3px;
 }
 .footer li{
-  margin-top: 35px;
+  margin-top: 3px;
   font-size: medium;
   font-weight: 500;
 }
@@ -907,19 +1044,26 @@ transform: scale(1.03);
                     /*Media-query pour les mobiles*/
 @media (max-width: 768px){
   .footer{
-   flex-direction: column;
+    flex-direction: column;
   }
   .footer-column{
     width: unset;
     margin-bottom: 5px;
     margin-top: 5px;
   }
-
+.footer ul{
+  margin-bottom: 25px;
+}
   .footer p{
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+  .footer li{
+    margin-top: 10px;
+    font-size: small;
+    font-weight: 400;
   }
 }
 
