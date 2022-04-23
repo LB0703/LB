@@ -1,54 +1,53 @@
 /*Wildcard */
 
-*{
+* {
   box-sizing: border-box;
   font-family: "Raleway", "sans-serif";
   list-style-type: none;
   text-decoration: none;
   margin: 0px;
 }
-header{
+header {
   background-color: white;
   padding-left: 50px;
   padding-right: 50px;
 }
-main{
+main {
   background-color: white;
   padding-left: 50px;
   padding-right: 50px;
 }
-footer{
+footer {
   background-color: #f2f2f2;
   padding-left: 50px;
   padding-right: 50px;
 }
 
-                    /*Media-query pour les mobiles*/
-@media(max-width: 767px){
-  header{
+@media (max-width: 767px) {
+  header {
     padding-left: 0px;
     padding-right: 0px;
   }
-  main{
+  main {
     padding-left: 0px;
     padding-right: 0px;
   }
-  footer{
+  footer {
     padding-left: 0px;
     padding-right: 0px;
   }
 }
 /*nav-bar */
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#logo{
+#logo {
   display: flex;
   max-width: 140px;
 }
-.menu{
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,96 +56,98 @@ header{
   font-weight: 500;
   font-size: 110%;
 }
-.menu a{
+.menu a {
   padding: 30px 20px 10px 20px;
   color: black;
 }
-nav a{
+nav a {
   border-top: 3px solid transparent;
 }
-nav a:hover{
+nav a:hover {
   border-top: 3px solid #0065fc;
   color: #0065fc;
 }
 
-                    /*Media-query pour les tablettes*/
-                              /*nav-bar */
-@media (min-width: 768px) and (max-width: 991px){
-  header{
+/*Media-query pour les tablettes*/
+/*nav-bar */
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
     display: block;
     justify-content: space-between;
   }
-  #logo{
+  #logo {
     margin: auto;
   }
-  .menu{
+  .menu {
     display: block;
   }
-  .menu nav{
+  .menu nav {
     display: flex;
   }
-  .menu nav a{
+  .menu nav a {
+    padding-top: 0;
     margin: 0;
     width: 50%;
-    border-bottom: 3px solid #f2f2f2 ;
+    border-bottom: 3px solid #f2f2f2;
     text-align: center;
     border-top: transparent;
-    }
-  nav a:hover{
+  }
+  nav a:hover {
     border-bottom: 3px solid #0065fc;
     border-top: transparent;
   }
 }
 
-                    /*Media-query pour les mobiles*/
-                            /*nav-bar */
-@media (max-width: 767px){
-  header{
+/*Media-query pour les mobiles*/
+/*nav-bar */
+@media (max-width: 767px) {
+  header {
     display: block;
     justify-content: space-between;
   }
-  #logo{
+  #logo {
     margin: auto;
   }
-  .menu{
+  .menu {
     display: block;
   }
-  nav{
+  nav {
     display: flex;
   }
-  .menu nav a{
+  .menu nav a {
+    padding-top: 0;
     margin: 0;
     width: 50%;
-    border-bottom: 3px solid #f2f2f2 ;
+    border-bottom: 3px solid #f2f2f2;
     text-align: center;
     border-top: transparent;
   }
-  nav a:hover{
+  nav a:hover {
     border-bottom: 3px solid #0065fc;
     border-top: transparent;
   }
 }
 
 /*section.search */
-.search{
+.search {
   display: flex;
   flex-direction: column;
 }
 .search-bar {
   margin-top: 40px;
 }
-h1{
+h1 {
   margin-bottom: 10px;
 }
-.search-bar p{
+.search-bar p {
   font-size: medium;
   font-weight: 500;
   margin-bottom: 10px;
 }
-.search-form{
+.search-form {
   display: flex;
 }
-.localization{
+.localization {
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
   border-radius: 10px 0 0 10px;
@@ -157,7 +158,7 @@ h1{
   align-items: center;
   font-size: 120%;
 }
-.city{
+.city {
   height: 55px;
   width: 230px;
   border: 2px solid #f2f2f2;
@@ -165,7 +166,7 @@ h1{
   text-align: center;
   font-size: 120%;
 }
-.button-search{
+.button-search {
   background-color: #0065fc;
   border: #0065fc;
   border-radius: 0 10px 10px 0;
@@ -176,33 +177,32 @@ h1{
   font-weight: 600;
   cursor: pointer;
 }
-.button-search i{
+.button-search i {
   display: none;
 }
 
-
-                    /*Media-query pour les tablettes*/
-                          /*section.search */
-@media (min-width: 768px) and (max-width: 991px){
-  .search{
+/*Media-query pour les tablettes*/
+/*section.search */
+@media (min-width: 768px) and (max-width: 991px) {
+  .search {
     margin: 0 15px;
   }
-  h1{
+  h1 {
     text-align: justify;
     font-size: 22px;
   }
-  .search-bar p{
+  .search-bar p {
     font-size: 15px;
     margin-bottom: 20px;
   }
-  .search-form{
+  .search-form {
     justify-items: center;
   }
-  .localization{
+  .localization {
     height: 50px;
     font-size: large;
   }
-  .city{
+  .city {
     height: 50px;
     width: 250px;
     border: 1px solid #f2f2f2;
@@ -210,46 +210,45 @@ h1{
     text-align: center;
     font-size: 110%;
   }
-  .button-search{
+  .button-search {
     width: 55px;
     height: 50px;
     border-radius: 10px;
     margin-left: -10px;
   }
-  .button-search i{    
+  .button-search i {
     display: block;
     color: white;
     font-size: large;
   }
-  .button-search span{
+  .button-search span {
     display: none;
   }
 }
 
-
-                    /*Media-query pour les mobiles*/
-                          /*section.search */
-@media (max-width: 767px){
-  .search{
+/*Media-query pour les mobiles*/
+/*section.search */
+@media (max-width: 767px) {
+  .search {
     align-items: center;
     margin: 0 15px;
   }
-  h1{
-    text-align: justify;
+  h1 {
+    text-align: start;
     font-size: 22px;
   }
-  .search-bar p{
+  .search-bar p {
     font-size: 15px;
     margin-bottom: 20px;
   }
-  .search-form{
+  .search-form {
     justify-items: center;
   }
-  .localization{
+  .localization {
     height: 50px;
     font-size: 90%;
   }
-  .city{
+  .city {
     height: 50px;
     width: 250px;
     border: 1px solid #f2f2f2;
@@ -257,25 +256,24 @@ h1{
     text-align: center;
     font-size: 110%;
   }
-  .button-search{
+  .button-search {
     width: 55px;
     height: 50px;
     border-radius: 10px;
     margin-left: -10px;
-}
-  .button-search i{    
+  }
+  .button-search i {
     display: block;
     color: white;
     font-size: medium;
   }
-  .button-search span{
+  .button-search span {
     display: none;
   }
 }
 
-
 /*filters-search */
-.title{
+.title {
   font-size: 130%;
   font-weight: bold;
   margin-right: 40px;
@@ -287,20 +285,20 @@ h1{
   flex-wrap: wrap;
   margin-top: 20px;
 }
-.filters{
+.filters {
   position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-.filters span{
-  border: 3px solid lightgrey;
+.filters span {
+  border: 2px solid lightgrey;
   padding: 15px 60px;
   border-radius: 32px;
   font-weight: bold;
   font-size: large;
   width: 100%;
-  margin-right:40px;
+  margin-right: 40px;
   cursor: pointer;
 }
 .filters i {
@@ -311,7 +309,6 @@ h1{
   padding: 20px;
   border-radius: 50%;
   z-index: 1000;
-  
 }
 .filters span:hover {
   background-color: #deebff;
@@ -319,44 +316,44 @@ h1{
   transform: scale(1.01);
 }
 
-
-                    /*Media-query pour les tablettes*/
-@media (min-width: 768px) and (max-width: 991px){
-  
-  .filters{
-    margin-top: 10px;
-    margin-bottom: 10px;
+/*Media-query pour les tablettes*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .filters {
+    margin: 10px 0;
   }
-  .title{
-    font-size: medium;
+  .title {
+    display: block;
+    width: 100%;
   }
-  .filters span{
-    font-size: 80%;
-    text-align: justify;
+  .filters span {
+    font-size: 100%;
+    padding: 12px 55px;
+  }
+  .filters i {
+    font-size: 100%;
+    padding: 17px;
   }
 }
 
-                    /*Media-query pour les mobiles*/
-@media (max-width: 768px){
-  .filters{
-    margin-top: 10px;
-    margin-bottom: 8px;
+/*Media-query pour les mobiles*/
+@media (max-width: 768px) {
+  .filters {
+    margin: 6px;
   }
-  .title{
+  .title {
+    display: block;
+    width: 100%;
     font-size: large;
-    margin-right: 0px;
+    margin: 15px;
   }
-  .form-filters {
-    margin: 12px;
+  .filters span {
+    padding: 12px 53px;
   }
-  .filters span{
-    font-size: 70%;
-    text-align: justify;
-    border: 2px solid #f2f2f2;
-    padding-top: 15px;
+  .filters i {
+    font-size: 100%;
+    padding: 18px;
   }
 }
-
 
 /* info */
 .info {
@@ -368,7 +365,7 @@ h1{
 .fa-solid.fa-info {
   font-size: medium;
   font-weight: bolder;
-  height:25px;
+  height: 25px;
   width: 25px;
   text-align: center;
   border: 2px solid lightgray;
@@ -377,15 +374,14 @@ h1{
   margin-right: 20px;
 }
 .info p {
-font-size: large;
+  font-size: large;
   font-weight: 500;
   color: black;
 }
 
-
-                    /*Media-query pour les tablettes*/
-@media (min-width: 768px) and (max-width: 991px){
-  .info{
+/*Media-query pour les tablettes*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .info {
     margin-bottom: 10px;
     margin-top: 20px;
     margin-right: 250px;
@@ -394,17 +390,17 @@ font-size: large;
     font-size: 70%;
     font-weight: 500;
   }
-  .fa-solid.fa-info{
+  .fa-solid.fa-info {
     height: 30px;
     width: 30px;
     font-size: 17px;
   }
 }
 
-                    /*Media-query pour les mobiles*/
+/*Media-query pour les mobiles*/
 @media (max-width: 768px) {
   .info {
-    margin: 5px ;
+    margin: 5px;
   }
   .fa-solid.fa-info {
     font-size: 18px;
@@ -413,38 +409,36 @@ font-size: large;
   .info p {
     font-size: x-small;
   }
-    }
-
-
+}
 
 /*duo*/
 .duo-box {
   display: flex;
   justify-content: space-between;
-flex-wrap: wrap;
-  }
-#housing h2{
-padding-left: 32px;
-font-size: 140%;
-  }
+  flex-wrap: wrap;
+}
+#housing h2 {
+  padding-left: 32px;
+  font-size: 140%;
+}
 #housing {
   width: 64%;
   height: 800px;
   border-radius: 15px;
-  background-color: #f2f2f2; 
+  background-color: #f2f2f2;
 }
 aside {
   width: 31%;
   height: 800px;
   border-radius: 15px;
   background-color: #f2f2f2;
-  }
-.housing-list{
+}
+.housing-list {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.card{
+.card {
   width: 28%;
   margin: 20px 20px 20px 20px;
   background-color: white;
@@ -452,10 +446,10 @@ aside {
   box-shadow: 5px 5px 5px #d3d3d3;
   transition: 0.5s;
 }
-.card:hover{
+.card:hover {
   transform: scale(1.02);
 }
-.card .picture{
+.card .picture {
   height: 160px;
   width: 98%;
   margin-left: 4px;
@@ -464,22 +458,22 @@ aside {
   background-size: cover;
   border-radius: 10% 10% 0 0;
 }
-.card p{
+.card p {
   color: black;
 }
-.h3{
+.h3 {
   color: black;
   font-size: larger;
   font-weight: bold;
 }
-.card .fa-star{
-color: #0065fc;
-text-align: justify;
+.card .fa-star {
+  color: #0065fc;
+  text-align: justify;
 }
 .card .colorgrey {
   color: #d6d1d1;
 }
-.star{
+.star {
   padding-left: 32px;
   padding-bottom: 10px;
 }
@@ -492,14 +486,13 @@ text-align: justify;
   color: black;
 }
 
-
-                    /*Media-query pour les tablettes*/
-@media (min-width: 768px) and (max-width: 991px){
-  .duo-box{
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
+/*Media-query pour les tablettes*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .duo-box {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
   }
-  #housing h2{
+  #housing h2 {
     font-size: 100%;
     margin-bottom: 0px;
     margin-top: 10px;
@@ -511,104 +504,95 @@ text-align: justify;
     width: 100%;
     background-color: white;
   }
-  .housing-list{
+  .housing-list {
     margin-bottom: 30px;
   }
-#housing h3{
-  font-size: 90%;
-}
-#housing .card{
-  width: 38%;
-  height: 210px;
-  margin-bottom: 2px;
-
-}
-#housing .picture{
-  height: 50%;
-  object-fit: cover;
-  background-size: cover;
-}
-.card p{
-  font-size: 80%;
-}
-.star{
-  font-size: 80%;
-}
-.show-more{
-  font-size: 90%;
-}
+  #housing h3 {
+    font-size: 90%;
   }
+  #housing .card {
+    width: 38%;
+    height: 210px;
+    margin-bottom: 2px;
+  }
+  #housing .picture {
+    height: 50%;
+    object-fit: cover;
+    background-size: cover;
+  }
+  .card p {
+    font-size: 80%;
+  }
+  .star {
+    font-size: 80%;
+  }
+  .show-more {
+    font-size: 90%;
+  }
+}
 
-
-
-                      /*Media-query pour les mobiles*/
-@media (max-width: 768px){
-  .duo-box{
+/*Media-query pour les mobiles*/
+@media (max-width: 768px) {
+  .duo-box {
     flex-direction: column-reverse;
     flex-wrap: wrap;
-
-    }
-    #housing {
-      width: 100%;
-      height: 100%;
-      background-color: white;  
-      }
-    #housing h3{
-  font-size: 90%;
+  }
+  #housing {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+  #housing h3 {
+    font-size: 90%;
+  }
+  #housing .card {
+    width: 100%;
+    height: 210px;
+    margin-bottom: 20px;
+  }
+  #housing .picture {
+    height: 50%;
+    object-fit: cover;
+    background-size: cover;
+  }
+  .card p {
+    font-size: 80%;
+  }
+  .star {
+    font-size: 80%;
+  }
+  .show-more {
+    font-size: 110%;
+    padding-left: 20px;
+  }
 }
-    #housing .card{
-  width: 100%;
-  height: 210px;
-  margin-bottom: 20px;
-}
-    #housing .picture{
-  height: 50%;
-  object-fit: cover;
-  background-size: cover;
-}
-    .card p{
-  font-size: 80%;
-}
-    .star{
-  font-size: 80%;
-}
-    .show-more{
-  font-size: 110%;
-  padding-left: 20px;
-}
-
-}
-
-
-
-
 
 /*most-popular*/
 
-.header-most-popular{
+.header-most-popular {
   display: flex;
   justify-content: space-between;
 }
-.header-most-popular h2{
+.header-most-popular h2 {
   font-size: 140%;
   padding-left: 32px;
   margin-bottom: 40px;
 }
-.fa-chart-line{
+.fa-chart-line {
   padding-top: 20px;
   padding-right: 32px;
   font-size: 160%;
   color: black;
 }
-.most-popular-list{
+.most-popular-list {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.most-popular-list .card a{
+.most-popular-list .card a {
   display: flex;
 }
-.most-popular-list .card{
+.most-popular-list .card {
   height: 33%;
   width: 80%;
   background-color: white;
@@ -616,10 +600,10 @@ text-align: justify;
   box-shadow: 5px 5px 5px #d3d3d3;
   transition: 0.5s;
 }
-.most-popular-list .card:hover{
+.most-popular-list .card:hover {
   transform: scale(1.03);
 }
-.most-popular-list .picture{
+.most-popular-list .picture {
   object-fit: cover;
   width: 40%;
   height: 160px;
@@ -627,24 +611,23 @@ text-align: justify;
   margin-left: 2px;
   margin-top: 2px;
 }
-.star-most-popular{
+.star-most-popular {
   margin-left: 30px;
 }
-.most-popular-list-item-card .fa-star{
-color: #0065fc;
+.most-popular-list-item-card .fa-star {
+  color: #0065fc;
 }
-.most-popular-list-item-card .colorgrey{
+.most-popular-list-item-card .colorgrey {
   color: #d6d1d1;
 }
 
-
-                    /*Media-query pour les tablettes*/
-                            /*most-popular*/
-@media (min-width: 768px) and (max-width: 991px){
-  .header-most-popular h2{
+/*Media-query pour les tablettes*/
+/*most-popular*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-most-popular h2 {
     font-size: 100%;
   }
-  .fa-chart-line{
+  .fa-chart-line {
     font-size: 100%;
   }
   aside {
@@ -653,349 +636,255 @@ color: #0065fc;
     margin: 0;
     border-radius: 0px;
     background-color: #f2f2f2;
-    }
-    .most-popular-list .card{
-      height: 120px;
-      margin-bottom: 10px;
-      width: 70%;
-    }
-    .most-popular-list .picture{
-      height: 114px;
-      padding-top: 3px;
-      padding-left: 3px;
-    }
-    aside h3{
-      font-size: 90%;
-}
-    .star-most-popular{
-      font-size: 80%;
-}
-}
-
-                    /*Media-query pour les mobiles*/
-                            /*most-popular*/
-@media (max-width: 768px){
-aside{
-  border-radius: 0px ;
-  width: 100%;
-  height: 50%;
-}
-.most-popular-list .card{
-  height: 140px;
-  width: 90%;
-}
-.most-popular-list .picture{
-  height: 138px;
-  padding-top: 1px;
-  padding-bottom: 2px;
-  padding-left: 3px;
-}
-aside h3{
-  font-size: 90%;
-}
-.star-most-popular{
-  font-size: 80%;
-}
+  }
+  .most-popular-list .card {
+    height: 120px;
+    margin-bottom: 10px;
+    width: 70%;
+  }
+  .most-popular-list .picture {
+    height: 114px;
+    padding-top: 3px;
+    padding-left: 3px;
+  }
+  aside h3 {
+    font-size: 90%;
+  }
+  .star-most-popular {
+    font-size: 80%;
+  }
 }
 
-
+/*Media-query pour les mobiles*/
+/*most-popular*/
+@media (max-width: 768px) {
+  aside {
+    border-radius: 0px;
+    width: 100%;
+    height: 50%;
+  }
+  .most-popular-list .card {
+    height: 140px;
+    width: 90%;
+  }
+  .most-popular-list .picture {
+    height: 138px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-left: 3px;
+  }
+  aside h3 {
+    font-size: 90%;
+  }
+  .star-most-popular {
+    font-size: 80%;
+  }
+}
 
 /*activities-in-Marseille*/
 /*tiltle-section*/
-#header-activities {
-  display: flex;
-  margin-top: 40px;
-  margin-bottom: 10px;
+#header-activities{
+  display: block;
+  width: 100%;
 }
 #header-activities h2{
-  font-size: 130%;
   color: black;
+  margin: 50px 0 30px 0;
 }
-h3{
+.column-activities .description{
   color: black;
-  padding: 0 32px;
+  padding: 5px 0 10px 20px;
+  text-align: justify;
 }
-            /*column-activities*/
-.column-activities{
+/*column-activities*/
+.column-activities-item{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  margin: 0;
+  height: 100%;
 }
-          /*one-column-activites*/
-.one-column-activities{
+/*one-column-activites*/
+.column-activities-item .one-column-activities{
   background-color: white;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #d3d3d3;
   transition: 0.5s;
   width: 23%;
+  height: 550px;
 }
-.one-column-activities:hover{
+.column-activities-item .one-column-activities:hover{
   transform: scale(1.03);
 }
-.vieux-port{
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-  width: 100%;
-  height: 600px;
-}
-.parc-national{
+.one-column-activities img{
   object-fit: cover;
   width: 100%;
-  height: 600px;
+  height: 480px;
   border-radius: 20px 20px 0 0;
 }
-
-          /*second-column-activities*/
-.second-column-activities{
+/*double-column-activities*/
+.column-activities-item .double-column-activities{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 23%;
+  height: 550px;
 }
-.activities-top-left{
+.card-activities-large{
+  height: 58%;
   background-color: white;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #d3d3d3;
   transition: 0.5s;
 }
-.fort-pomegues{
-  object-fit: cover;
-  width: 100%;
-  height: 300px;
-  border-radius: 20px 20px 0 0;
-}
-.activities-top-left:hover{
+.card-activities-large:hover{
   transform: scale(1.03);
 }
-.activities-bottom-left{
+.card-activities-small{
+  height: 38%;
   background-color: white;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #d3d3d3;
   transition: 0.5s;
 }
-.iles-du-frioul{
-  object-fit: cover;
-  width: 100%;
-  height: 200px;
-  border-radius: 20px 20px 0 0;
-}
-.activities-bottom-left:hover{
+.card-activities-small:hover {
   transform: scale(1.03);
 }
-.activities-top-right{
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px #d3d3d3;
-  transition: 0.5s;
-}
-.notre-dame{
+.card-activities-small img{
   object-fit: cover;
   width: 100%;
-  height: 200px;
+  height: 70%;
   border-radius: 20px 20px 0 0;
 }
-.activities-top-right:hover{
-transform: scale(1.03);
-}
-.activities-bottom-right{
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px #d3d3d3;
-  transition: 0.5s;
-}
-.longchamp{
+.card-activities-large img{
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
   width: 100%;
-  height: 300px;
+  height: 80%;
+  border-radius: 20px 20px 0 0;
 }
-.activities-bottom-right:hover{
-  transform: scale(1.03);
-}
-
-
-                    /*Media-query pour les tablettes*/
-                        /*activities-in-Marseille*/
-@media (min-width: 768px) and (max-width: 991px){
-  .column-activities{
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-    margin: 0;
-  }
-  #header-activities h2{
-    font-size: 100%;
-    padding-left: 32px;
-  }
-  h3{
-    font-size: 90%;
-  }
-  .one-column-activities{ 
-    height: 30%;
-    width: 40%;
-  }
-  .activities-top-left{
-    margin-bottom: 10px;
-  }
-  .activities-bottom-left{
-    margin-bottom: 10px;
-  }
-  .vieux-port {
-    height: 300px;
-  }
-  .parc-national{
-    height: 300px;
-  }
-  .second-column-activities{
-    width: 50%;
-    height: 30%;
-  }
-  .activities-bottom-right{
-    margin-bottom: 10px;
-}
-  .activities-bottom-right{
-    margin-top: 10px;
-}
-  .fort-pomegues{
-    height: 140px;
-}
-  .iles-du-frioul{
-    height: 100px;
-}
-  .notre-dame{
-    height: 100px;
-}
-  .longchamp{
-    height: 140px;
-}
-}
-
-
-                    /*Media-query pour les mobiles*/
-                        /*activities-in-Marseille*/
-@media (max-width: 768px){
+/*Media-query pour les tablettes*/
+/*activities-in-Marseille*/
+@media (min-width: 768px) and (max-width: 991px) {
   .column-activities{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    height: 100%;
   }
-  #header-activities h2{
-    padding-left: 20px;
+  .column-activities .description{
+    font-size: 90%;
+    text-align: start;
   }
-  h3{
+}
+/*Media-query pour les mobiles*/
+/*activities-in-Marseille*/
+@media (max-width: 768px){
+  #header-activities h2 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .column-activities{
+    display: flex;
+    justify-content: space-around;
+  }
+  .column-activities-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .column-activities-item .one-column-activities {
+    width: 90%;
+    height: 25%;
+    margin: 20px;
+  }
+  .one-column-activities img{
+    height: 100px;
+  }
+  .column-activities-item .double-column-activities {
+  display: flex;
+  height: 25%;
+  width: 90%;
+  }
+  .double-column-activities img{
+    height: 100px;
+  }
+  .card-activities-small{
+  margin-bottom: 20px;
+  }
+  .card-activities-large {
+    margin-bottom: 20px;
+  }
+  .column-activities .description{
     font-size: 80%;
-  }
-  .one-column-activities{
-    width: 90%;
-    height: 150px;
-    justify-content: space-around;
-    margin-bottom: 10px;
-  }
-  .activities-top-left{
-    height: 150px;
-    margin-bottom: 10px;
-  }
-  .activities-bottom-left{
-    height: 150px;
-    margin-bottom: 10px;
-  }
-  .vieux-port {
-    width: 100%;
-    height: 100px;
-  }
-  .parc-national{
-    width: 100%;
-    height: 100px;
-  }
-  .second-column-activities{
-    width: 90%;
-    justify-content: space-around;
-  }
-  .activities-top-right{
-    height: 150px;
-    margin-bottom: 10px;
-  }
-  .activities-bottom-right{
-    margin-bottom: 10px;
-    height: 150px;
-  }
-  .fort-pomegues{
-    height: 100px;
-
-  }
-  .iles-du-frioul{
-    height: 100px;
-  }
-  .notre-dame{
-    height: 100px;
-  }
-  .longchamp{
-    height: 50%;
+    text-align: start;
   }
 }
 
-
 /*footer*/
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
 }
-.footer-column{
+.footer-column {
   width: 31%;
   margin: 0;
 }
-.footer p{
+.footer p {
   font-size: 125%;
   font-weight: bold;
   margin: 20px 0;
 }
-.footer a{
+.footer a {
   text-decoration: none;
   color: black;
 }
-.footer a:hover{
+.footer a:hover {
   font-weight: bold;
 }
-.footer ul{
+.footer ul {
   padding-left: 0px;
   margin-bottom: 50px;
 }
-.footer li{
+.footer li {
   margin-top: 10px;
   font-size: medium;
   font-weight: 500;
 }
 /*Media-query pour les tablettes*/
-@media (min-width: 768px) and (max-width: 991px){
-  .footer p{
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer p {
     font-size: large;
     font-weight: bold;
     margin: 35px 0;
   }
-}
-
-                    /*Media-query pour les mobiles*/
-@media (max-width: 768px){
-  .footer{
-    flex-direction: column;
+  .footer ul {
+    margin-bottom: 20px 0;
   }
-  .footer-column{
-    width: unset;
-    margin-left: 20px;
-  }
-  .footer p{
-    font-size: large;
-    font-weight: bold;
-  }
-  .footer li{
-    margin-top: 10px;
+  .footer li {
+    margin-top: 15px;
     font-size: medium;
     font-weight: 500;
   }
 }
 
+/*Media-query pour les mobiles*/
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer-column {
+    width: unset;
+    margin-left: 20px;
+  }
+  .footer p {
+    font-size: large;
+    font-weight: bold;
+  }
+  .footer ul {
+    margin-bottom: 15px 0;
+  }
 
+  .footer li {
+    margin-top: 5px;
+    font-size: medium;
+    font-weight: 500;
+  }
+}
