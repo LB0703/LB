@@ -375,7 +375,6 @@ h2{
   display: block;
   width: 100%;
   margin: 20px 0;
-  
 }
 #housing{
   width: 64%;
@@ -579,42 +578,42 @@ h3{
   border-radius: 20px 20px 20px 20px;
 }
 /*one-column-activites*/
-.one-column-activities .card{
-  height: 550px;
+.column-activities-item.one-column-activities .card{
+  padding: 0;
+  height: 100%;
 }
-.one-column-activities img{
+.column-activities-item.one-column-activities img{
   border-radius: 20px 20px 0 0;
   width: 100%;
-  height: 480px;
+  height: 470px;
   object-fit: cover;
 }
 /*double-column-activities*/
-.double-column-activities {
+.column-activities-item.double-column-activities {
   display: flex;
   flex-direction: column;
-  align-content: space-between;
-  border: solid blue;
-  height: 550px;
+  justify-content: space-between;
+}
+.column-activities-item.double-column-activities .card{
+padding: 0;
 }
 .double-column-activities .card .card-activities-large{
-  height: 250px;
+  height: 280px;
 }
-.column-activities-item .card-activities-large{
-  height: 60%;
-}
+
 .double-column-activities .card .card-activities-small{
 height: 200px;
 }
 .card-activities-small img{
   object-fit: cover;
   width: 100%;
-  height: 75% ;
+  height: 70% ;
   border-radius: 20px 20px 0 0;
 }
 .card-activities-large img{
   object-fit: cover;
   width: 100%;
-  height:75%;
+  height:70%;
   border-radius: 20px 20px 0 0;
 }
 /*Media-query pour les tablettes*/
@@ -625,48 +624,54 @@ height: 200px;
     height: 100%;
   }
   .column-activities .description{
-    font-size: medium;
-    padding: 5px 10px;
-  }
+text-align: start; 
+
+}
 }
 /*Media-query pour les mobiles*/
-/*activities-in-Marseille*/
 @media (max-width: 767px){
   #header-activities h2{
-    margin-left: 20px;
     margin-bottom: 20px;
-  }
-  .column-activities{
-    
   }
   .column-activities-list{
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
-  .column-activities-list .one-column-activities{
-    width: 85%;
-    height: 180px;
-    margin: 20px;
+  .column-activities-item{
+    height: 100%;
+    width: 80%;
   }
-  .one-column-activities img{
-    height: 120px;
+  .column-activities .card{
+    margin-bottom: 15px;
   }
-  .column-activities-list .double-column-activities{
-    display: table;
-    height: 180px;
-    width: 85%;
-    padding-bottom: 10px;
+  .column-activities-item.one-column-activities{
+    margin: auto;
   }
-  .double-column-activities img{
-    height: 120px;
+  .column-activities-item.one-column-activities .card{
+    height: 200px;
   }
-  
+  .column-activities-item.one-column-activities img{
+    height: 150px;
+  }
+  .column-activities-item.double-column-activities{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .column-activities-item.double-column-activities .card{
+    height: 200px;
+  }
   .card-activities-large{
-    margin-top: 10px;
+    height: 200px;
+  }
+  .card-activities-large img{
+    height: 150px;
+  }
+  .card-activities-small img{
+    height: 150px;
   }
   .card-activities-small{
-    margin: 10px 0;
+    height: 200px;
   }
   .column-activities .description{
     padding-top: 10px;
