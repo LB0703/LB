@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/a0bf48136d.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -55,19 +56,19 @@
           <span class="title">Filtres</span>
           <div class="filters">
             <i class="fa-solid fa-money-bill-wave"></i>
-            <span class="economic">Economique</span>
+            <span class="category">Économique</span>
           </div>
           <div class="filters">
             <i class="fa-solid fa-child-reaching"></i>
-            <span class="family">Familial</span>
+            <span class="category">Familial</span>
           </div>
           <div class="filters">
             <i class="fa-solid fa-heart"></i>
-            <span class="romantic">Romantique</span>
+            <span class="category">Romantique</span>
           </div>
           <div class="filters">
             <i class="fa-solid fa-dog"></i>
-            <span class="animal">Animaux autorisés</span>
+            <span class="category">Animaux autorisés</span>
           </div>
         </form>
       </section>                                                    
@@ -285,92 +286,111 @@
       </div>
             <!--column-activities-->
       <section class="column-activities">
-        <div class="column-activities-item">
+        <div class="column-activities-list">
             <!--one-column-activities-->
-          <div class="one-column-activities">
-            <article class="card-activities">
-              <a href="#">
-                <img
-                  class="vieux-port"
-                  src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                  alt="Vieux_Port"
-                />
-                <div class="description">
-                  <h3>Vieux Port</h3>
-                </div>
-              </a>
-            </article>
+          <div class="column-activities-item"> 
+            <div class="one-column-activities">
+              <article class="card"> 
+                <article class="card-activities">
+                  <a href="#">
+                    <img
+                    class="vieux-port"
+                    src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                    alt="Vieux_Port"
+                    />
+                  <div class="description">
+                    <h3>Vieux Port</h3>
+                  </div>
+                  </a>
+                </article>
+              </article>
+            </div>
+          </div>
+          <div class="column-activities-item">
+            <div class="double-column-activities">
+              <article class="card"> 
+                <article class="card-activities-large">
+                  <a href="#">
+                    <img
+                      class="fort-pomegues"
+                      src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                      alt="Fort_de_Pomègues"
+                    />
+                    <div class="description">
+                      <h3>Fort de Pomègues</h3>
+                    </div>
+                  </a>
+                </article>
+              </article>
+              <article class="card"> 
+                <article class="card-activities-small">
+                  <a href="#">
+                    <img
+                    class="iles-du-frioul"
+                    src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                    alt="Iles_du_Frioul"
+                  />
+                  <div class="description">
+                    <h3>Îles du Frioul</h3>
+                  </div>
+                  </a>
+                </article>
+              </article>
+            </div>
+          </div>
+            <!--one-column-activities-->
+          <div class="column-activities-item">
+            <div class="one-column-activities">
+              <article class="card"> 
+                <article class="card-activities">
+                  <a href="#">
+                    <img
+                      class="parc-national"
+                      src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                      alt="Parc_National_des_Calanques"
+                    />
+                    <div class="description">
+                      <h3>Parc National des Calanques</h3>
+                    </div>
+                  </a>
+                </article>
+              </article>
+            </div>
           </div>
             <!--double-column-activities-->
+          <div class="column-activities-item">
           <div class="double-column-activities">
-            <article class="card-activities-large">
-              <a href="#">
-                <img
-                  class="fort-pomegues"
-                  src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                  alt="Fort_de_Pomègues"
-                />
-                <div class="description">
-                  <h3>Fort de Pomègues</h3>
-                </div>
-              </a>
+            <article class="card"> 
+              <article class="card-activities-small">
+                <a href="#">
+                  <img
+                    class="notre-dame"
+                    src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                    alt="Notre-dame"
+                  />
+                  <div class="description">
+                    <h3>Notre Dame de la Garde</h3>
+                  </div>
+                </a>
+              </article>
             </article>
-            <article class="card-activities-small">
-              <a href="#">
-                <img
-                  class="iles-du-frioul"
-                  src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                  alt="Iles_du_Frioul"
-                />
-                <div class="description">
-                  <h3>Îles du Frioul</h3>
-                </div>
-              </a>
-            </article>
-          </div>
-            <!--one-column-activities-->
-          <div class="one-column-activities">
-            <article class="card-activities">
-              <a href="#">
-                <img
-                  class="parc-national"
-                  src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                  alt="Parc_National_des_Calanques"
-                />
-                <div class="description">
-                  <h3>Parc National des Calanques</h3>
-                </div>
-              </a>
-            </article>
-          </div>
-            <!--double-column-activities-->
-          <div class="double-column-activities">
-            <article class="card-activities-small">
-              <a href="#">
-                <img
-                  class="notre-dame"
-                  src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                  alt="Notre_Dame_de_la_Garde"
-                />
-                <div class="description">
-                  <h3>Notre Dame de la Garde</h3>
-                </div>
-              </a>
-            </article>
-            <article class="card-activities-large">
-              <a href="#">
-                <img
-                  class="longchamp"
-                  src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                  alt="Parc_Longchamp"
-                />
-                <div class="description">
-                  <h3>Parc Longchamp</h3>
-                </div>
-              </a>
+            <article class="card"> 
+              <article class="card-activities-large">
+                <a href="#">
+                  <img
+                    class="longchamp"
+                    src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                    alt="Parc_Longchamp"
+                  />
+                  <div class="description">
+                    <h3>Parc Longchamp</h3>
+                  </div>
+                </a>
+              </article>
             </article>
           </div>
         </div>
+      </div> 
       </section>
     </main>
                                                   <!--footer-->
