@@ -1,51 +1,51 @@
 /*Wildcard*/
-* {
+*{
   box-sizing: border-box;
   font-family: "Raleway", "sans-serif";
   list-style-type: none;
   text-decoration: none;
   margin: 0px;
 }
-header {
+header{
   background-color: white;
   padding-left: 25px;
   padding-right: 25px;
 }
-main {
+main{
   background-color: white;
   padding-left: 25px;
   padding-right: 25px;
 }
-footer {
+footer{
   background-color: #f2f2f2;
   padding-left: 25px;
   padding-right: 25px;
 }
-@media (max-width: 767px) {
-  header {
+@media (max-width: 767px){
+  header{
     padding-left: 0px;
     padding-right: 0px;
   }
-  main {
+  main{
     padding-left: 0px;
     padding-right: 0px;
   }
-  footer {
+  footer{
     padding-left: 0px;
     padding-right: 0px;
   }
 }
 /*nav-bar */
-header {
+header{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#logo {
+#logo{
   display: flex;
   max-width: 140px;
 }
-.menu {
+.menu{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,92 +54,92 @@ header {
   font-weight: 500;
   font-size: 110%;
 }
-.menu a {
+.menu a{
   padding: 19px 20px 10px 20px;
   color: black;
 }
-nav a {
+nav a{
   border-top: 3px solid transparent;
 }
-nav a:hover {
+nav a:hover{
   border-top: 3px solid #0065fc;
   color: #0065fc;
 }
 /*Media-query pour les tablettes*/
 /*nav-bar */
-@media (min-width: 768px) and (max-width: 991px) {
-  header {
+@media (min-width: 768px) and (max-width: 991px){
+  header{
     display: block;
     justify-content: space-between;
   }
-  #logo {
+  #logo{
     margin: auto;
   }
-  .menu {
+  .menu{
     display: block;
   }
-  .menu nav {
+  .menu nav{
     display: flex;
   }
-  .menu nav a {
+  .menu nav a{
     margin: 0;
     width: 50%;
     border-bottom: 3px solid #f2f2f2;
     text-align: center;
   }
-  nav a:hover {
+  nav a:hover{
     border-bottom: 3px solid #0065fc;
     border-top: transparent;
   }
 }
 /*Media-query pour les mobiles*/
 /*nav-bar */
-@media (max-width: 767px) {
-  header {
+@media (max-width: 767px){
+  header{
     display: block;
     justify-content: space-between;
   }
-  #logo {
+  #logo{
     margin: auto;
   }
-  .menu {
+  .menu{
     display: block;
   }
-  nav {
+  nav{
     display: flex;
   }
-  .menu nav a {
+  .menu nav a{
     padding-top: 0;
     margin: 0;
     width: 50%;
     border-bottom: 3px solid #f2f2f2;
     text-align: center;
   }
-  nav a:hover {
+  nav a:hover{
     border-bottom: 3px solid #0065fc;
     border-top: transparent;
   }
 }
 /*section.search */
-.search {
+.search{
   display: flex;
   flex-direction: column;
 }
-.search-bar {
+.search-bar{
   margin-top: 40px;
 }
-h1 {
+h1{
   margin-bottom: 10px;
 }
-.search-bar p {
+.search-bar p{
   font-size: medium;
   font-weight: 500;
   margin-bottom: 10px;
 }
-.search-form {
+.search-form{
   display: flex;
 }
-.localization {
+.localization{
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   border-radius: 15px 0 0 15px;
@@ -150,7 +150,7 @@ h1 {
   align-items: center;
   font-size: 110%;
 }
-.city {
+.city{
   height: 55px;
   width: 230px;
   border: 2px solid #f2f2f2;
@@ -158,7 +158,7 @@ h1 {
   text-align: center;
   font-size: 120%;
 }
-.button-search {
+.button-search{
   background-color: #0065fc;
   border: #0065fc;
   border-radius: 0 10px 10px 0;
@@ -169,59 +169,59 @@ h1 {
   font-weight: 600;
   cursor: pointer;
 }
-.button-search i {
+.button-search i{
   display: none;
 }
 /*Media-query pour les tablettes*/
 /*section.search */
-@media (min-width: 768px) and (max-width: 991px) {
-  .localization {
+@media (min-width: 768px) and (max-width: 991px){
+  .localization{
     height: 50px;
   }
-  .city {
+  .city{
     height: 50px;
     border: 1px solid #f2f2f2;
   }
-  .button-search {
+  .button-search{
     width: 50px;
     height: 50px;
     border-radius: 12px;
     border: #0065fc;
     margin-left: -6px;
   }
-  .button-search i {
+  .button-search i{
     display: block;
   }
-  .button-search span {
+  .button-search span{
     display: none;
   }
 }
 /*Media-query pour les mobiles*/
 /*section.search */
-@media (max-width: 767px) {
-  .search {
+@media (max-width: 767px){
+  .search{
     margin: 0 15px;
   }
-  .search-bar p {
+  .search-bar p{
     margin-bottom: 30px;
   }
-  .localization {
+  .localization{
     height: 50px;
   }
-  .city {
+  .city{
     height: 50px;
     border: 1px solid #f2f2f2;
   }
-  .button-search {
+  .button-search{
     width: 50px;
     height: 50px;
     border-radius: 12px;
     margin-left: -6px;
   }
-  .button-search i {
+  .button-search i{
     display: block;
   }
-  .button-search span {
+  .button-search span{
     display: none;
   }
 }
@@ -243,7 +243,7 @@ h1 {
   display: flex;
   cursor: pointer;
 }
-.filters span {
+.filters span{
   border: 3px solid lightgrey;
   padding: 15px 50px;
   border-radius: 25px;
@@ -253,7 +253,7 @@ h1 {
   font-weight: 900;
   font-size: 19px;
 }
-.filters i {
+.filters i{
   position: absolute;
   color: #0065fc;
   background-color: #deebff;
@@ -266,7 +266,7 @@ h1 {
   z-index: 1000;
   margin-left: -6px;
 }
-.filters span:hover {
+.filters span:hover{
   background-color: #deebff;
   border: 3px solid #deebff ;
 }
@@ -296,15 +296,14 @@ h1 {
     margin-bottom: 10px;
   }
 }
-
 /*info*/
-.info {
+.info{
   display: flex;
   justify-content: start;
   align-items: center;
   margin: 40px 0;
 }
-.fa-solid.fa-info {
+.fa-solid.fa-info{
   font-size: medium;
   font-weight: bolder;
   height: 25px;
@@ -316,7 +315,7 @@ h1 {
   margin-right: 20px;
   line-height: 20px;
 }
-.info p {
+.info p{
   font-size: large;
   font-weight: 500;
   color: black;
@@ -344,7 +343,7 @@ h1 {
 /*info*/
 @media (max-width: 767px){
   .info{
-    margin-left: 16px;
+    margin-left: 10px;
   }
   .fa-solid.fa-info{
     text-align: center;
@@ -537,7 +536,7 @@ h3{
 /*Media-query pour les mobiles*/
 /*most-popular*/
 @media (max-width: 767px){
-  aside {
+  aside{
     display: flex;
     justify-content: space-between;
     border-radius: 0px;
@@ -558,15 +557,15 @@ h3{
   width: 100%;
 }
 #header-activities h2{
-  margin: 20px 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .column-activities .description{
   color: black;
-  padding: 15px 0 10px 20px;
+  padding: 25px 0 0 20px;
   text-align: justify;
 }
 /*column-activities*/
-
 .column-activities-list{
   display: flex;
   justify-content: space-between;
@@ -589,31 +588,30 @@ h3{
   object-fit: cover;
 }
 /*double-column-activities*/
-.column-activities-item.double-column-activities {
+.column-activities-item.double-column-activities{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .column-activities-item.double-column-activities .card{
-padding: 0;
+  padding: 0;
 }
 .double-column-activities .card .card-activities-large{
   height: 280px;
 }
-
 .double-column-activities .card .card-activities-small{
-height: 200px;
+  height: 200px;
 }
 .card-activities-small img{
   object-fit: cover;
   width: 100%;
-  height: 70% ;
+  height: 60% ;
   border-radius: 20px 20px 0 0;
 }
 .card-activities-large img{
   object-fit: cover;
   width: 100%;
-  height:70%;
+  height:72%;
   border-radius: 20px 20px 0 0;
 }
 /*Media-query pour les tablettes*/
@@ -624,15 +622,13 @@ height: 200px;
     height: 100%;
   }
   .column-activities .description{
-text-align: start; 
-
+  text-align: start; 
 }
 }
 /*Media-query pour les mobiles*/
 @media (max-width: 767px){
   #header-activities h2{
-    margin-bottom: 20px;
-  }
+margin: 20px 20px;  }
   .column-activities-list{
     display: flex;
     flex-direction: column;
